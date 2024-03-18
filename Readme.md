@@ -15,7 +15,7 @@ cd Type_Declation_Parser
 3. Build Visual Studio Project with CMake
 ```
 cd windows_scripts
-./build_camke
+./build_cmake
 ```
 4. Build the binary with MSBuild (only if you are on Windows)
 ```
