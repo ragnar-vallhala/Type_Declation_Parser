@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION  3.0)
+cmake_minimum_required(VERSION  3.20)
 
 project(C_Parser)
 
-add_executable(example test/example.c
-                        src/parser.c 
-                        src/lexer.c
-                        src/utility.c)
+add_executable(example test/example.cpp
+                        src/parser.cpp 
+                        src/lexer.cpp
+                        src/utility.cpp)
 
 include_directories(./include)
