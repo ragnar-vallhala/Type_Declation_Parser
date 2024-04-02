@@ -26,6 +26,28 @@ cd windows_scripts
 ./run
 ```
 
+## Building and Running Flags
+When building with `MSBuild`, `Debug` or `Release` configuration can be selected through flags\
+*For `Debug`*
+```
+./build_binary -d
+```
+*For `Release`*
+```
+./build_binary -r
+```
+Default build configuration is `Debug`.\
+Similarly, while running the  program 
+```
+./run -d
+``` 
+or 
+```
+./run -r
+```
+can be used to select Debug or Release mode respectively.\
+To run the program after building, use `./run` for running the Deafault `Debug` executable.
+
 ## Pitfalls
 * Although the project is based on CMake, any supported project file can be genated, but the above mentioned steps are for Windows only. On a diffrent system one may need to follow diffrent steps.
 * On Windows, the building is done by the MSBuild and Visual Studio solution file. They need to be pre-installed.
